@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-lg-3">
+    <input type="number" class="form-control" value="1" #input />
+    <button class="btn btn-default" (click)="send(input.value)">Send</button>
+  </div>
+</div>
+
+<br />
+
+<div class="row">
+
+  <div class="col-lg-3">
+    <monthcalendar [id]="1"></monthcalendar>
+  </div>
+
+  <div class="col-lg-3">
+    <monthcalendar [year]="2020" [id]="2"></monthcalendar>
+  </div>
+
+  <div class="col-lg-3">
+    <monthcalendar [year]="2021" [month]="3" [id]="3"></monthcalendar>
+  </div>
+
+  <div class="col-lg-3">
+    <monthcalendar [month]="mn" [id]="4"></monthcalendar>
+  </div>
+
+  <div class="col-lg-3">
+    <analogclock></analogclock>
+  </div>
+
+  <div class="col-lg-3">
+    <datepicker></datepicker>
+  </div>
+
+
+</div>

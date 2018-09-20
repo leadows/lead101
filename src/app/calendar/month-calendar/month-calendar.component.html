@@ -1,0 +1,19 @@
+<div class="panel panel-primary" style="width:390px">
+
+  <div class="panel-heading">
+    {{year}} - {{month}}
+    <button class="btn btn-success" (click)="previous()">&lt;</button>
+    &nbsp;&nbsp;
+    <button class="btn btn-success" (click)="next()">&gt;</button>
+  </div>
+
+  <div class="panel-body">
+    <div *ngFor="let dayName of getDayNames()" class="daybox">
+      {{dayName}}
+    </div>
+    <div *ngFor="let day of days" class="daybox">
+      {{day}}
+    </div>
+  </div>
+
+</div>
